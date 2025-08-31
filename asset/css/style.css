@@ -199,11 +199,12 @@ header ul li a:hover {
 
 .fv {
   padding-top: 70px;
+  position: relative;
 }
 .fv_wrapper {
   position: relative;
   width: 100%;
-  max-height: 600px;
+  height: 80vh;
   aspect-ratio: 2/1;
   overflow: hidden;
   margin: 0 auto;
@@ -295,7 +296,7 @@ header ul li a:hover {
   position: fixed;
   right: -10px;
   width: min(500px, 100%);
-  bottom: 600px;
+  top: 50%;
   background-color: #fff;
   border-radius: 10px;
   border: solid 1px #000;
@@ -310,6 +311,12 @@ header ul li a:hover {
 }
 .fv_time-table.hidden {
   right: -471px;
+}
+.fv_time-table.fixed {
+  position: fixed;
+  top: 100px;
+  right: 0;
+  bottom: auto;
 }
 .fv_time-table_left {
   text-align: center;
